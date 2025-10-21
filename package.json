@@ -1,0 +1,33 @@
+{
+  "name": "ai-naming-reviewer",
+  "version": "1.0.0",
+  "description": "AI-powered code naming review tool",
+  "main": "index.js",
+  "bin": {
+    "ai-naming-review": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vbarbier1809/BlackboxAITest.git"
+  },
+  "keywords": [
+    "ai",
+    "code-review",
+    "naming",
+    "blackbox"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@octokit/rest": "^22.0.0",
+    "axios": "^1.12.2"
+  },
+  "bugs": {
+    "url": "https://github.com/Vbarbier1809/BlackboxAITest/issues"
+  },
+  "homepage": "https://github.com/Vbarbier1809/BlackboxAITest#readme"
+}
