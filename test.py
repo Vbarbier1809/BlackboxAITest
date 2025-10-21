@@ -1,25 +1,38 @@
-def fn(x,y,z):
-    a = x + y
-    b = a * z
-    c = b / 2
-    return c
+def calc(x,y,z):
+    res1 = x + y
+    res2 = res1 * z
+    res3 = res2 / 2
+    return res3
 
-class Cls:
+class Obj:
     def __init__(self, v):
-        self.val = v
+        self.v = v
 
-    def mth(self, n):
-        res = self.val * n
+    def proc(self, n):
+        res = self.v * n
         return res
 
-# Test the functions
-obj = Cls(5)
-result = obj.mth(3)
+# Test the code
+o = Obj(10)
+result = o.proc(5)
 print(f"Result: {result}")
 
-# Some variables with poor naming
-d = [1,2,3,4,5]
-e = sum(d)
-f = len(d)
-g = e / f
-print(f"Average: {g}")
+# More bad naming
+lst = [1,2,3,4,5,6,7,8,9,10]
+s = sum(lst)
+l = len(lst)
+avg = s / l
+print(f"Average: {avg}")
+
+def do_stuff(a,b,c,d,e,f,g):
+    temp1 = a + b
+    temp2 = temp1 * c
+    temp3 = temp2 - d
+    temp4 = temp3 + e
+    temp5 = temp4 * f
+    final = temp5 / g
+    return final
+
+# Call the function
+val = do_stuff(1,2,3,4,5,6,7)
+print(f"Final value: {val}")
